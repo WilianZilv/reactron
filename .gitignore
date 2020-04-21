@@ -10,8 +10,10 @@
 
 # production
 /build
+/dist
 
 # misc
+.editorconfig
 .DS_Store
 .env.local
 .env.development.local

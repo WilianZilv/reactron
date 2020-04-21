@@ -1,34 +1,74 @@
 {
-  "name": "eleact",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "reactron",
+    "version": "0.1.0",
+    "homepage": "./",
+    "main": "public/electron.js",
+    "private": true,
+    "scripts": {
+        "start": "concurrently npm:*:dev",
+        "electron:dev": "nodemon --exec \"electron .\"",
+        "react:dev": "react-scripts start",
+        "react:build": "react-scripts build",
+        "dist:win": "npm run react:build && electron-builder --win",
+        "dist:linux": "npm run react:build && electron-builder --linux",
+        "dist:mac": "npm run react:build && electron-builder --mac"
+    },
+    "build": {
+        "appId": "wilianzilv.reactron",
+        "productName": "reactron",
+        "files": [
+            "build/**/*",
+            "node_modules/**/*",
+            "backend/**",
+            "src/**/**"
+        ],
+        "extraResources": [
+            {
+                "from": "./resources/",
+                "to": "./"
+            }
+        ],
+        "win": {
+            "target": "nsis",
+            "icon": "resources/media/icon.ico"
+        },
+        "mac": {
+            "category": "your.app.category",
+            "icon": "resources/media/icon.ico"
+        },
+        "linux": {
+            "category": "Your app category",
+            "icon": "resources/media/icon.ico",
+            "target": {
+                "target": "appimage",
+                "arch": [
+                    "x64"
+                ]
+            }
+        }
+    },
+    "dependencies": {
+        "electron-is-dev": "^1.2.0"
+    },
+    "devDependencies": {
+        "concurrently": "^5.1.0",
+        "electron": "^8.2.3",
+        "electron-builder": "^22.5.1",
+        "nodemon": "^2.0.3",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-scripts": "3.4.1"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }

@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="resources/media/logo_title.png" height="175" width="175" alt="Unform" />
+</p>
 
-## Available Scripts
+<h3 align="center">
+  An Electron + React starting point! 
+</h3>
 
-In the project directory, you can run:
+<br>
 
-### `yarn start`
+## Overview
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Reactron is a tiny Electron project configured to work with React as the frontend. The project has just the necessary to start a new app.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Getting Started
 
-### `yarn test`
+Installation
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<code>\$ npm install</code>
 
-### `yarn build`
+Developing
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<code>\$ npm start</code>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Important
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The backend and frontend code should be separated.
 
-### `yarn eject`
+<code>public</code> folder for the backend.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<code>src</code> folder for the frontend.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Generating the bundle
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Windows
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<code>\$ npm run dist:win</code>
 
-## Learn More
+Linux
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<code>\$ npm run dist:linux</code>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Mac
 
-### Code Splitting
+<code>\$ npm run dist:mac</code>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+# License
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[MIT](LICENCE)
