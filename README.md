@@ -10,7 +10,7 @@
 
 ## Overview
 
-Reactron is a tiny Electron project built to handle with React as frontend. The project has just the necessary to start a new app.
+Reactron is a tiny Electron project configured to work with React as frontend. The project has just the necessary to start a new app.
 
 ## Getting Started
 
