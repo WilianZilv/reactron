@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">
-  An Electron + React starting point! 
+  Yet another Electron + React boilerplate. 
 </h3>
 
 <br>
