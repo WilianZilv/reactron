@@ -26,9 +26,9 @@ Developing
 
 The backend and frontend code must be separated.
 
-<code>public</code> the backend's folder.
+<code>public</code> folder for the backend.
 
-<code>src</code> the frontend's folder.
+<code>src</code> folder for the frontend.
 
 # Generating the bundle
 
