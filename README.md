@@ -30,7 +30,7 @@ The backend and frontend code must be separated.
 
 <code>src</code> folder for the frontend.
 
-# Generating the bundle
+## Generating the bundle
 
 Windows
 
@@ -44,6 +44,6 @@ Mac
 
 <code>\$ npm run dist:mac</code>
 
-# License
+## License
 
 [MIT](LICENCE)
