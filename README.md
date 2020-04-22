@@ -46,4 +46,4 @@ Mac
 
 ## License
 
-[MIT](LICENCE)
+[MIT](https://github.com/WilianZilv/reactron/blob/master/LICENSE)
