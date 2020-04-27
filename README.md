@@ -10,9 +10,9 @@
 
 ## Overview
 
-Reactron is a tiny Electron project configured to work with React as the frontend. The project has just the necessary to start a new app.
+Reactron is a tiny Electron project configured to work with React as frontend. The project has just the necessary to start a new app.
 
-# Getting Started
+## Getting Started
 
 Installation
 
@@ -24,13 +24,13 @@ Developing
 
 ## Important
 
-The backend and frontend code should be separated.
+The backend and frontend code must be separated.
 
 <code>public</code> folder for the backend.
 
 <code>src</code> folder for the frontend.
 
-# Generating the bundle
+## Generating the bundle
 
 Windows
 
@@ -44,6 +44,6 @@ Mac
 
 <code>\$ npm run dist:mac</code>
 
-# License
+## License
 
-[MIT](LICENCE)
+[MIT](https://github.com/WilianZilv/reactron/blob/master/LICENSE)
