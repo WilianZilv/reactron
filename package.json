@@ -6,7 +6,7 @@
     "private": true,
     "scripts": {
         "start": "concurrently npm:*:dev",
-        "electron:dev": "nodemon --exec \"electron .\"",
+        "electron:dev": "nodemon --exec \"electron . --debug\"",
         "react:dev": "react-scripts start",
         "react:build": "react-scripts build",
         "dist:win": "npm run react:build && electron-builder --win",
@@ -54,6 +54,7 @@
         "concurrently": "^5.1.0",
         "electron": "^8.2.3",
         "electron-builder": "^22.5.1",
+        "electron-devtools-installer": "^3.0.0",
         "nodemon": "^2.0.3",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",

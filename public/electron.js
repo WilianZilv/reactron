@@ -5,7 +5,17 @@ const isDev = require("electron-is-dev");
 
 let mainWindow;
 
-function createWindow() {
+async function createWindow() {
+    if (isDev) {
+        try {
+            const {
+                default: installExtension,
+                REACT_DEVELOPER_TOOLS,
+            } = require("electron-devtools-installer");
+            const name = await installExtension(REACT_DEVELOPER_TOOLS, true);
+            console.log(name, "was installed");
+        } catch (error) {}
+    }
     mainWindow = new BrowserWindow({
         width: 1050,
         height: 625,
@@ -16,13 +26,16 @@ function createWindow() {
             "icon.ico"
         ),
     });
+    mainWindow.on("ready-to-show", async () => {
+        mainWindow.show();
+        if (isDev) mainWindow.webContents.openDevTools({ mode: "undocked" });
+    });
+    mainWindow.on("closed", () => (mainWindow = null));
     mainWindow.loadURL(
         isDev
             ? "http://localhost:3000"
             : `file://${path.join(__dirname, "../build/index.html")}`
     );
-    mainWindow.on("ready-to-show", mainWindow.show);
-    mainWindow.on("closed", () => (mainWindow = null));
 }
 
 app.on("ready", createWindow);
