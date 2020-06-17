@@ -30,6 +30,7 @@ async function createWindow() {
         mainWindow.show();
         if (isDev) mainWindow.webContents.openDevTools({ mode: "undocked" });
     });
+    mainWindow.setMenu(null)
     mainWindow.on("closed", () => (mainWindow = null));
     mainWindow.loadURL(
         isDev
