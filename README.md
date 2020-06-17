@@ -4,6 +4,13 @@
 
 # Reactron - P32929
 
+# What's in it
+1. ReactJS
+2. ElectronJS
+3. Material UI
+4. React Router DOM
+5. Overmind React
+
 # How to use:
 1. Clone
 2. Yarn
