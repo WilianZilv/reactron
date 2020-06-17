@@ -9,4 +9,6 @@
 2. Yarn
 3. Yarn start
 
-Thanks to WilianZilv for making [Reactron](https://github.com/WilianZilv/reactron)
+For more info about how to use, check this: [Reactron](https://github.com/WilianZilv/reactron).
+
+Thanks to WilianZilv for making [Reactron](https://github.com/WilianZilv/reactron).
