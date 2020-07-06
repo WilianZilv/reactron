@@ -5,13 +5,13 @@
     "main": "public/electron.js",
     "private": true,
     "scripts": {
-        "start": "concurrently npm:*:dev",
+        "start": "concurrently yarn:*:dev",
         "electron:dev": "nodemon --exec \"electron . --debug\"",
         "react:dev": "react-scripts start",
         "react:build": "react-scripts build",
-        "dist:win": "npm run react:build && electron-builder --win",
-        "dist:linux": "npm run react:build && electron-builder --linux",
-        "dist:mac": "npm run react:build && electron-builder --mac"
+        "dist:win": "yarn react:build && electron-builder --win",
+        "dist:linux": "yarn react:build && electron-builder --linux",
+        "dist:mac": "yarn react:build && electron-builder --mac"
     },
     "build": {
         "appId": "wilianzilv.reactron",
