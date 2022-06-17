@@ -52,7 +52,7 @@
     },
     "devDependencies": {
         "concurrently": "^5.1.0",
-        "electron": "^8.2.3",
+        "electron": "^15.5.5",
         "electron-builder": "^22.5.1",
         "electron-devtools-installer": "^3.0.0",
         "nodemon": "^2.0.3",
